@@ -342,7 +342,7 @@ class ClassificationModelTrainer:
                                      verbose=1,
                                      save_weights_only=save_weights_condition,
                                      save_best_only=True,
-                                     period=1)
+                                     save_freq=1)
 
 
         tensorboard = tf.keras.callbacks.TensorBoard(log_dir=logs_path, 
